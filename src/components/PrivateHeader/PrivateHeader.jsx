@@ -45,7 +45,7 @@ export const PrivateHeader = () => {
 
           <button
             onClick={() => setToken("")}
-            className="btn btn-danger rounded-circle  px-2 ms-4"
+            className="btn btn-danger rounded-circle py-2 px-2 ms-4"
           >
             {user.firstname.at(0) + "." + user.lastname.at(0)}
           </button>

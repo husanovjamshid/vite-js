@@ -2,7 +2,7 @@ export const PrivateHome = () => {
   
     return (
       <div className="container">
-        <h1 className="text-center">Private Home</h1>
+        <h1 className="text-center ">Private Home</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias a
           recusandae sequi vel deleniti, cum quasi voluptate. Voluptatem et

@@ -160,7 +160,59 @@
       "firstname": "AADASDD",
       "lastname": "Ddfsfsdf",
       "id": 23
+    },
+    {
+      "email": "jamfdfdfshid@gmail.com",
+      "password": "$2a$10$JJmBabnheJNrb8MMXsbgBeDV4ZP.H0vBFV1F66yxeV9rfqQ7TGrRK",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 24
+    },
+    {
+      "email": "akbar1@gmail.com",
+      "password": "$2a$10$wWGBzWA3GC//iWHVjHEt3umsBJs2R9BJszozdsVBKDV4YDhqZd0Qm",
+      "firstname": "Akbar",
+      "lastname": "Ahmadjonov",
+      "id": 25
+    },
+    {
+      "email": "jamrereshid@gmail.com",
+      "password": "$2a$10$.oUMM8GlZg72emFIjJh9guZaPtIQUKuO/5/5BB5BFOLHrkEtbp7sq",
+      "firstname": "Jamshidbek",
+      "lastname": "Husanov",
+      "id": 26
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "category": "Technology",
+      "title": "fdfdfdfd",
+      "text": "fdfdfdfdfdf",
+      "id": 1
+    },
+    {
+      "category": "Technology",
+      "title": "dsds",
+      "text": "dsdsdsd",
+      "id": 2
+    },
+    {
+      "category": "Choose Category",
+      "title": "uxlash kerak ertaroq",
+      "text": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
+      "id": 3
+    },
+    {
+      "category": "Technology",
+      "title": "dsdsdsd",
+      "text": "sdsdsdsds",
+      "id": 4
+    },
+    {
+      "category": "Technology",
+      "title": "dsdsds",
+      "text": "dsdsdsd",
+      "id": 5
+    }
+  ]
 }
