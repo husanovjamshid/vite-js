@@ -1,10 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import "./register.scss";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext/AuthContext";
+import { UserContext } from "../../context/UserContext/UserContext";
 
 export const Register = () => {
-  let [user, setUser] = useState([]);
+  let { setToken } = useContext(AuthContext);
+  let { setUser } = useContext(UserContext);
 
   const navigate = useNavigate();
 
@@ -24,9 +27,10 @@ export const Register = () => {
       })
       .then((data) => {
         if (data.status === 201) {
-          localStorage.setItem("token", data.data.accessToken);
-          localStorage.setItem("user", JSON.stringify(data.data.user));
-          navigate('/')
+          setToken(data.data.accessToken);
+          setUser(JSON.stringify(data.data.user));
+          
+          navigate("/");
         }
       })
       .catch((err) => console.log(err));

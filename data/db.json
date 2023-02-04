@@ -55,6 +55,41 @@
       "firstname": "dsdsd",
       "lastname": "Husanov",
       "id": 8
+    },
+    {
+      "email": "jamsfdfdfdfhid@gmail.com",
+      "password": "$2a$10$gkw2y43UbVUxAOx7b9cCp.mU8R7ceUeZwYk9WVyKY8elJqzm4yu3q",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 9
+    },
+    {
+      "email": "jamshdsdsid@gmail.com",
+      "password": "$2a$10$nZAsienMmUaWaJlHygRWXu5Ak8gXdcT.AYkT9Ufw554WaJl5quPfq",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 10
+    },
+    {
+      "email": "jamshdfdfid@gmail.com",
+      "password": "$2a$10$YLnPkp4CXbJDP5TJh0dqVOLDAhw1SncL10ywhOE/a19/K8S1DXHqe",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 11
+    },
+    {
+      "email": "jamdfdfshid@gmail.com",
+      "password": "$2a$10$Eqyst8f8ixR9fiQVeaijB.6c9io71SpKooyd7v4ZNeMKVFtVk7oRa",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 12
+    },
+    {
+      "email": "jamshidb@gmail.com",
+      "password": "$2a$10$7XVobzhMTgKGcwPN7iqU6uU.Frx7s8UE5IL3VMGUw1UE2IES2FHKm",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 13
     }
   ],
   "posts": []

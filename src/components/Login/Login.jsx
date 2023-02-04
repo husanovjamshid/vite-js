@@ -1,13 +1,14 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import "../Register/register.scss";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext/AuthContext";
 
 export const Login = () => {
   let [user1, setUser1] = useState([]);
 
-  const navigate = useNavigate()
-
+  const navigate = useNavigate();
+  let { setToken } = useContext(AuthContext);
   let emailRef = useRef();
   let passwordRef = useRef();
 
@@ -20,8 +21,8 @@ export const Login = () => {
       })
       .then((data) => {
         if (data.status === 201) {
-          localStorage.setItem("token", data.data.accessToken);
-          navigate('/')
+          setToken(data.data.accessToken);
+          navigate("/");
         }
       })
       .catch((err) => console.log(err));
