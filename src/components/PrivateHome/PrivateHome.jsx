@@ -1,4 +1,5 @@
 export const PrivateHome = () => {
+  
     return (
       <div className="container">
         <h1 className="text-center">Private Home</h1>

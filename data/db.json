@@ -90,6 +90,76 @@
       "firstname": "dsdsd",
       "lastname": "Husanov",
       "id": 13
+    },
+    {
+      "email": "jamsdsdsdhid@gmail.com",
+      "password": "$2a$10$hpST8a2SUEVkpenwSW086eLnA1lfx1GiOjxJZEngRUN.RzHEWjhMK",
+      "firstname": "dsdsd",
+      "lastname": "dsdsdsds",
+      "id": 14
+    },
+    {
+      "email": "jamshidffd@gmail.com",
+      "password": "$2a$10$F5aA/xGNia606VUJYpkqjebP6Mh2MxsQvW0oFu8BotHo3UNIfi8G.",
+      "firstname": "dsdsd",
+      "lastname": "dsdsdsds",
+      "id": 15
+    },
+    {
+      "email": "jadsdsmshid@gmail.com",
+      "password": "$2a$10$SWDP5KG7JHZpKEjdNF17xOkBkt6fb1EcGZTxppkcqttzZws0DH5nS",
+      "firstname": "Jamshidbek",
+      "lastname": "Husanov",
+      "id": 16
+    },
+    {
+      "email": "jamddsshdsdsid@gmail.com",
+      "password": "$2a$10$aoDr1uegzSqX/Rn7vkEGAu2BCqMR8ccUaLn3U15eY8s6BuqKmjbfK",
+      "firstname": "dsdsdsdd",
+      "lastname": "Husadsdsnov",
+      "id": 17
+    },
+    {
+      "email": "jadsddsaddadasdmshid@gmail.com",
+      "password": "$2a$10$RLuyGOQivab7wSVLoOUUeujbIOS0YAaJHCCIp.T7zy5fhuyoqL7N6",
+      "firstname": "dsddsdssd",
+      "lastname": "Husadsdsdnov",
+      "id": 18
+    },
+    {
+      "email": "jamsdsdshid@gmail.com",
+      "password": "$2a$10$bTC2gbBeFFv9XhErQMctF.MmDO7N2yxi3QhlmElTPiPGlsgZAvv7e",
+      "firstname": "Jamshidbek",
+      "lastname": "Husanov",
+      "id": 19
+    },
+    {
+      "email": "jamshiid@gmail.com",
+      "password": "$2a$10$YfMW.V63t0Dbo.zBu0tI6OOHnXNIMRp8D5T3r56SqnbP0CxwlIrGW",
+      "firstname": "dsdsd",
+      "lastname": "dsdsdsds",
+      "id": 20
+    },
+    {
+      "email": "jjamshid@gmail.com",
+      "password": "$2a$10$Y768xCMUCXGlfG9oOSCeKeBE6oRJ7PMT6fQugNw/RykSKhYvlPGZO",
+      "firstname": "Jamshidbek",
+      "lastname": "Husanov",
+      "id": 21
+    },
+    {
+      "email": "akbar@gmail.com",
+      "password": "$2a$10$PtTYA7DsgoYwNgYwmLTIneGAAWehsdUmrK7L8M5zSkPbWePnrh41y",
+      "firstname": "Akbar",
+      "lastname": "Ahmadjonov",
+      "id": 22
+    },
+    {
+      "email": "jamsfsdfsdfhid@gmail.com",
+      "password": "$2a$10$qRKO0riuuRTwdWp/3DE.f.1pEn6o1HReJDNAmqtDBDsy6n5oIskym",
+      "firstname": "AADASDD",
+      "lastname": "Ddfsfsdf",
+      "id": 23
     }
   ],
   "posts": []

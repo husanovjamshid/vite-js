@@ -28,7 +28,7 @@ export const Register = () => {
       .then((data) => {
         if (data.status === 201) {
           setToken(data.data.accessToken);
-          setUser(JSON.stringify(data.data.user));
+          setUser((data.data.user));
           
           navigate("/");
         }

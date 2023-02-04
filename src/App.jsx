@@ -5,8 +5,12 @@ import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext/AuthContext";
 
 function App() {
-  let { token } = useContext(AuthContext);
-  return <div className="App">{token ? <Private /> : <Public />}</div>;
+  const { token } = useContext(AuthContext);
+  if (token) {
+    return <Private />;
+  } else {
+    return <Public />;
+  }
 }
 
 export default App;
