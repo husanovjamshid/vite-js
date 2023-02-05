@@ -181,38 +181,32 @@
       "firstname": "Jamshidbek",
       "lastname": "Husanov",
       "id": 26
+    },
+    {
+      "email": "jamdddshid@gmail.com",
+      "password": "$2a$10$7cURsTGd5fem9OqLINct1OaNro1N/Rz7kNv75Z129Pj0CSeqwqev.",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 27
+    },
+    {
+      "email": "jamsdsdhid@gmail.com",
+      "password": "$2a$10$QvgeNBluX5B.yo35dOueGelKbXvvgaHxGPGlo8ZYsdJIqCRbjNw8.",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 28
     }
   ],
   "posts": [
     {
-      "category": "Technology",
-      "title": "fdfdfdfd",
-      "text": "fdfdfdfdfdf",
       "id": 1
     },
     {
-      "category": "Technology",
-      "title": "dsds",
-      "text": "dsdsdsd",
+      "category": "Future",
+      "title": "sdd",
+      "text": "dsdsd",
+      "time": "2023-02-01",
       "id": 2
-    },
-    {
-      "category": "Choose Category",
-      "title": "uxlash kerak ertaroq",
-      "text": "loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem",
-      "id": 3
-    },
-    {
-      "category": "Technology",
-      "title": "dsdsdsd",
-      "text": "sdsdsdsds",
-      "id": 4
-    },
-    {
-      "category": "Technology",
-      "title": "dsdsds",
-      "text": "dsdsdsd",
-      "id": 5
     }
   ]
 }

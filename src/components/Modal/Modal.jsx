@@ -6,6 +6,7 @@ export const Modal = ({ modal, setModal, renderCard }) => {
   let category = useRef();
   let title = useRef();
   let text = useRef();
+  let time = useRef();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -15,6 +16,7 @@ export const Modal = ({ modal, setModal, renderCard }) => {
         category: category.current.value,
         title: title.current.value,
         text: text.current.value,
+        time: time.current.value,
       })
       .then((data) => {
         if (data.status === 201) {
@@ -46,17 +48,31 @@ export const Modal = ({ modal, setModal, renderCard }) => {
             <h3>Modal Title</h3>
 
             <form onSubmit={handleSubmit} className="py-4">
-              <select ref={category} className="form-control mb-3">
+              <select required ref={category} className="form-control mb-3">
                 <option>Choose Category</option>
                 <option>Technology</option>
+                <option>Future</option>
+                <option>World</option>
+                <option>Literature</option>
+                <option>Sport</option>
+                <option>Avto</option>
               </select>
               <input
+                required
+                ref={time}
+                className="form-control mb-3"
+                type="date"
+                placeholder="Add Date"
+              />
+              <input
+                required
                 ref={title}
                 className="form-control mb-3"
                 type="text"
                 placeholder="Add Title"
               />
               <textarea
+                required
                 ref={text}
                 className="form-control"
                 placeholder="Add text"
