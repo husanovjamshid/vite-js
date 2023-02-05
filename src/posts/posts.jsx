@@ -4,8 +4,8 @@ import "./posts.scss";
 import axios from "axios";
 import { UserContext } from "../context/UserContext/UserContext";
 import { useNavigate } from "react-router-dom";
+
 export const Posts = () => {
-  // const modalTitle = "Edit post";
   let [modal, setModal] = useState(false);
   let [editModal, setEditModal] = useState(false);
   let [card, setCard] = useState([]);
@@ -13,7 +13,7 @@ export const Posts = () => {
   let [editId, setEditId] = useState();
   let { user } = useContext(UserContext);
 
-  /////////////////////////////////////////////////
+
   let category = useRef();
   let title = useRef();
   let text = useRef();
@@ -38,7 +38,7 @@ export const Posts = () => {
         }
       })
       .catch((err) => console.log(err));
-    console.log({});
+
   };
 
   const renderCard = () => {
@@ -67,10 +67,9 @@ export const Posts = () => {
       .catch((err) => console.log(err));
   };
 
-  // const article = {};
+
   const handleEditSubmit = (evt) => {
     evt.preventDefault();
-
     axios
       .put(`http://localhost:5000/posts/${editId}`, {
         category: category.current.value,
@@ -192,7 +191,11 @@ export const Posts = () => {
       )}
 
       {editModal ? (
-        <Modal modal={editModal} setModal={setEditModal} modalTitle={"Edit post"}>
+        <Modal
+          modal={editModal}
+          setModal={setEditModal}
+          modalTitle={"Edit post"}
+        >
           <form onSubmit={handleEditSubmit} className="py-4">
             <select required ref={category} className="form-control mb-3">
               <option>Choose Category</option>

@@ -286,16 +286,28 @@
       "firstname": "dsdsd",
       "lastname": "dsdsdsds",
       "id": 41
+    },
+    {
+      "email": "jamdsdsdshid@gmail.com",
+      "password": "$2a$10$mOkZ/7SzD2J4e7xKcq1yG.WYZESGVhxofvUI99bj3liBHABuvRG4m",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 42
+    },
+    {
+      "email": "jadsddsdsdsdssdmshid@gmail.com",
+      "password": "$2a$10$oetbmS1GEBH7IfKUjFD5Sewg5GYrdLO2ZDzIoeU50HvyClEoR36dK",
+      "firstname": "dsdsd",
+      "lastname": "Ddfsfsdf",
+      "id": 43
+    },
+    {
+      "email": "jamdsdsdsddshid@gmail.com",
+      "password": "$2a$10$/gKlhVZYZMmdonOM6eUIK.6ckYmKJVLPYZgC6m/ciqXLis9rdBR52",
+      "firstname": "dsdsd",
+      "lastname": "Husanov",
+      "id": 44
     }
   ],
-  "posts": [
-    {
-      "category": "Technology",
-      "title": "Code yozish",
-      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n\n",
-      "time": "2023-02-05",
-      "author": "Alex Garsia",
-      "id": 1
-    }
-  ]
+  "posts": []
 }

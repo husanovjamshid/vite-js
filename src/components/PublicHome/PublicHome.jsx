@@ -14,7 +14,7 @@ export const PublicHome = () => {
   });
   return (
     <div className="container">
-      <h1 className="text-center mt-3">Public Home</h1>
+      <h1 className="text-center mb-5 mt-3">Public Home</h1>
       <div className="row g-5 py-5">
         {post.length ? (
           post.map((item) => (

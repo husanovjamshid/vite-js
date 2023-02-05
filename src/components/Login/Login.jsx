@@ -38,11 +38,10 @@ export const Login = () => {
             ref={emailRef}
             type="email"
             id="form1Example1"
-            className="form-control"
+            className="input rounded-2"
+            placeholder="Email address"
           />
-          <label className="form-label" htmlFor="form1Example1">
-            Email address
-          </label>
+          
         </div>
 
         <div className="form-outline mb-4">
@@ -50,11 +49,10 @@ export const Login = () => {
             ref={passwordRef}
             type="password"
             id="form1Example2"
-            className="form-control"
+            className="input rounded-2 text-muted"
+            placeholder="Password"
           />
-          <label className="form-label" htmlFor="form1Example2">
-            Password
-          </label>
+          
         </div>
 
         <div className="row mb-4">

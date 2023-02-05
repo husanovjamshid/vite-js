@@ -40,7 +40,7 @@ export const Register = () => {
     <div className="container">
       <form
         onSubmit={handleSubmit}
-        className=" mx-auto shadow-lg p-5 pt-2 mt-5 rounded-4"
+        className=" mx-auto shadow-lg p-5 pt-3 mt-5 rounded-4"
       >
         <h2 className="text-center mb-4">Register</h2>
         <div className="form-outline mb-3">
@@ -48,33 +48,30 @@ export const Register = () => {
             ref={nameRef}
             type="text"
             id="form1Example11"
-            className="form-control"
+            className="input rounded-2"
+            placeholder="First name"
           />
-          <label className="form-label" htmlFor="form1Example11">
-            First name
-          </label>
+          
         </div>
         <div className="form-outline mb-3">
           <input
             ref={lastRef}
             type="text"
             id="form1Example12"
-            className="form-control"
+            className="input rounded-2"
+            placeholder="Last name"
           />
-          <label className="form-label" htmlFor="form1Example12">
-            Last name
-          </label>
+         
         </div>
         <div className="form-outline mb-3">
           <input
             ref={emailRef}
             type="email"
             id="form1Example1"
-            className="form-control"
+            className="input rounded-2"
+            placeholder="Email address"
           />
-          <label className="form-label" htmlFor="form1Example1">
-            Email address
-          </label>
+          
         </div>
 
         <div className="form-outline mb-3">
@@ -82,11 +79,10 @@ export const Register = () => {
             ref={passwordRef}
             type="password"
             id="form1Example2"
-            className="form-control"
+            className="input rounded-2"
+            placeholder=" Password"
           />
-          <label className="form-label" htmlFor="form1Example2">
-            Password
-          </label>
+          
         </div>
 
         <div className="row mb-3">
