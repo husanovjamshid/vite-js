@@ -40,10 +40,10 @@ export const Register = () => {
     <div className="container">
       <form
         onSubmit={handleSubmit}
-        className=" mx-auto shadow-lg p-5 pt-2 mt-3 rounded-4"
+        className=" mx-auto shadow-lg p-5 pt-2 mt-5 rounded-4"
       >
         <h2 className="text-center mb-4">Register</h2>
-        <div className="form-outline mb-2">
+        <div className="form-outline mb-3">
           <input
             ref={nameRef}
             type="text"
@@ -54,7 +54,7 @@ export const Register = () => {
             First name
           </label>
         </div>
-        <div className="form-outline mb-2">
+        <div className="form-outline mb-3">
           <input
             ref={lastRef}
             type="text"
@@ -65,7 +65,7 @@ export const Register = () => {
             Last name
           </label>
         </div>
-        <div className="form-outline mb-2">
+        <div className="form-outline mb-3">
           <input
             ref={emailRef}
             type="email"
@@ -77,7 +77,7 @@ export const Register = () => {
           </label>
         </div>
 
-        <div className="form-outline mb-2">
+        <div className="form-outline mb-3">
           <input
             ref={passwordRef}
             type="password"
@@ -89,7 +89,7 @@ export const Register = () => {
           </label>
         </div>
 
-        <div className="row mb-2">
+        <div className="row mb-3">
           <div className="col d-flex justify-content-center">
             <div className="form-check">
               <input
@@ -110,7 +110,7 @@ export const Register = () => {
           </div>
         </div>
 
-        <button type="submit" className="btn btn-primary btn-block">
+        <button type="submit" className="btn btn-primary btn-block mt-2">
           Sign up
         </button>
       </form>
