@@ -40,7 +40,7 @@ export const Register = () => {
     <div className="container">
       <form
         onSubmit={handleSubmit}
-        className="w-50 mx-auto shadow-lg p-5 pt-2 mt-3 rounded-4"
+        className=" mx-auto shadow-lg p-5 pt-2 mt-3 rounded-4"
       >
         <h2 className="text-center mb-4">Register</h2>
         <div className="form-outline mb-2">

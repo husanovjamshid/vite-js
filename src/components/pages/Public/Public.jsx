@@ -9,7 +9,7 @@ export const Public = () => {
     <>
       <PublicHeader />
       <Routes>
-        <Route path="/" element={<PublicHome />} />
+        <Route index path="/" element={<PublicHome />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>

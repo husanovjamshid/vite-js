@@ -30,7 +30,7 @@ export const Login = () => {
     <div className="container">
       <form
         onSubmit={handleSubmit}
-        className="w-50 mx-auto shadow-lg p-5 pt-4 mt-5 rounded-4"
+        className=" mx-auto shadow-lg p-5 pt-4 mt-5 rounded-4"
       >
         <h2 className="text-center mb-4">Login</h2>
         <div className="form-outline mb-4">

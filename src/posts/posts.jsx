@@ -62,9 +62,9 @@ export const Posts = () => {
       <div className="row g-5 py-5">
         {card.length
           ? card.map((item) => (
-              <div className="col-md-4">
-                <div className="container">
-                  <div className="card">
+              <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div className="">
+                  <div className="card mx-auto">
                     <div className="card__body">
                       <span className="tag tag-blue mb-2">{item.category}</span>
                       <h4>{item.title}</h4>

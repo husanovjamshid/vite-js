@@ -3,66 +3,55 @@ import "./publics.scss";
 
 export const PublicHeader = () => {
   return (
-    <nav className="navbar pubHeader navbar-expand-lg navbar-light py-3">
-      <div className="container">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <Link className="navbar-brand mt-2 mt-lg-0" to="/">
-            <p className="h2 m-0 text-white">Logo</p>
-            
+    <>
+      <nav className="navbar py-3 navbar-expand-lg navbar-light bg-secondary">
+        <div className="container">
+          <Link to="/" className="navbar-brand me-2" href="https://mdbgo.com/">
+            <span className="fw-bold text-white">Unews</span>
           </Link>
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link to="/login" className="btn btn-outline-primary" href="#">
-                Login
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i className="fas fa-bars" />
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarButtonsExample">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+            <div className="d-flex align-items-center">
+              <Link
+                to="/login"
+                type="button"
+                className="btn btn-primary
+               px-3 me-2"
+              >
+                Sign in
               </Link>
-            </li>
-            <li className="nav-item ms-3">
-              <Link to="/register" className="btn btn-outline-success" href="#">
-                Register
+              <Link
+                to="/register"
+                type="button"
+                className="btn btn-primary me-3"
+              >
+                Sign up
               </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="d-flex align-items-center">
-          <a className="text-reset me-3" href="#">
-            <i className="fas fa-shopping-cart" />
-          </a>
-          <div className="dropdown">
-            <ul
-              className="dropdown-menu dropdown-menu-end"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <li>
-                <a className="dropdown-item" href="#">
-                  Some news
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Another news
-                </a>
-              </li>
-              <li>
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </li>
-            </ul>
+              <a
+                className="btn btn-dark px-3"
+                href="https://github.com/husanovjamshid"
+                role="button"
+              >
+                <i className="fab fa-github" />
+              </a>
+            </div>
           </div>
-          
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
