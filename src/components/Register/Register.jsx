@@ -1,115 +1,141 @@
-import { useContext, useEffect, useRef, useState } from "react";
-import "./register.scss";
+import "../Register/register.scss";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext/AuthContext";
-import { UserContext } from "../../context/UserContext/UserContext";
+import { useContext, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 export const Register = () => {
   let { setToken } = useContext(AuthContext);
-  let { setUser } = useContext(UserContext);
-
-  const navigate = useNavigate();
 
   let nameRef = useRef();
   let lastRef = useRef();
   let emailRef = useRef();
   let passwordRef = useRef();
+  let navigate = useNavigate();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
+
     axios
-      .post(`http://localhost:5000/register`, {
-        firstname: nameRef.current.value,
-        lastname: lastRef.current.value,
+      .post(`http://localhost:8080/register`, {
         email: emailRef.current.value,
         password: passwordRef.current.value,
       })
       .then((data) => {
         if (data.status === 201) {
           setToken(data.data.accessToken);
-          setUser((data.data.user));
-          
           navigate("/");
         }
       })
       .catch((err) => console.log(err));
   };
 
+  const validateSchema = Yup.object({
+    nameRef: Yup.string().required("Required firstname!"),
+    lastRef: Yup.string().required("Required lastname!"),
+    emailRef: Yup.string()
+      .required("Required email!")
+      .email("Enter emailing correctly!"),
+    passwordRef: Yup.string()
+      .min(4, "Password should not be less than 4 items!")
+      .max(15, "Password should not be more than 15!")
+      .required("Required password!"),
+  });
+  const initialValues = {
+    nameRef: "",
+    lastRef: "",
+    emailRef: "",
+    passwordRef: "",
+  };
   return (
-    <div className="container">
-      <form
-        onSubmit={handleSubmit}
-        className=" mx-auto shadow-lg p-5 pt-3 mt-5 rounded-4"
-      >
-        <h2 className="text-center mb-4">Register</h2>
-        <div className="form-outline mb-3">
-          <input
-            ref={nameRef}
-            type="text"
-            id="form1Example11"
-            className="input rounded-2"
-            placeholder="First name"
-          />
-          
-        </div>
-        <div className="form-outline mb-3">
-          <input
-            ref={lastRef}
-            type="text"
-            id="form1Example12"
-            className="input rounded-2"
-            placeholder="Last name"
-          />
-         
-        </div>
-        <div className="form-outline mb-3">
-          <input
-            ref={emailRef}
-            type="email"
-            id="form1Example1"
-            className="input rounded-2"
-            placeholder="Email address"
-          />
-          
-        </div>
-
-        <div className="form-outline mb-3">
-          <input
-            ref={passwordRef}
-            type="password"
-            id="form1Example2"
-            className="input rounded-2"
-            placeholder=" Password"
-          />
-          
-        </div>
-
-        <div className="row mb-3">
-          <div className="col d-flex justify-content-center">
-            <div className="form-check">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                defaultValue
-                id="form1Example3"
-                defaultChecked
-              />
-              <label className="form-check-label" htmlFor="form1Example3">
-                {" "}
-                Remember me{" "}
+    <div
+      id="intro"
+      className="bg-image"
+      style={{
+        backgroundImage:
+          "url(https://mdbootstrap.com/img/new/fluid/city/018.jpg)",
+        height: "100vh",
+      }}
+    >
+      <div className="container">
+        <Formik
+          validationSchema={validateSchema}
+          initialValues={initialValues}
+          onSubmit={handleSubmit}
+        >
+          <form className="shadow-lg bg-white mx-auto shadow-lg rounded-3 pt-3 mt-4 p-5 pb-3">
+            <h2 className="text-center mb-3">Register</h2>
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail331" className="form-label">
+               Firt name
               </label>
+              <Field
+                type="text"
+                className="form-control"
+                id="exampleInputEmail331"
+                aria-describedby="emailHelp"
+                name="nameRef"
+              />
+              <span className="text-danger">
+                <ErrorMessage name="nameRef" />
+              </span>
             </div>
-          </div>
-          <div className="col">
-            <a href="#!">Forgot password?</a>
-          </div>
-        </div>
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail431" className="form-label">
+                Last name
+              </label>
+              <Field
+                type="text"
+                className="form-control"
+                id="exampleInputEmail431"
+                aria-describedby="emailHelp"
+                name="lastRef"
+              />
+              <span className="text-danger">
+                <ErrorMessage name="lastRef" />
+              </span>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail1" className="form-label">
+                Email address
+              </label>
+              <Field
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                name="emailRef"
+              />
+              <span className="text-danger">
+                <ErrorMessage name="emailRef" />
+              </span>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail31" className="form-label">
+                Password
+              </label>
+              <Field
+                type="email"
+                className="form-control"
+                id="exampleInputEmail31"
+                aria-describedby="emailHelp"
+                name="passwordRef"
+              />
+              <span className="text-danger">
+                <ErrorMessage name="passwordRef" />
+              </span>
+            </div>
+           
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
+        </Formik>
+      </div>
 
-        <button type="submit" className="btn btn-primary btn-block mt-2">
-          Sign up
-        </button>
-      </form>
+      {/* <div className="mask" style={{ backgroundColor: "rgba(0, 0, 0, 0.7)" }} /> */}
     </div>
   );
 };
